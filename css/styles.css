@@ -93,12 +93,17 @@ body{
 h3 {
     padding-left: 3vw;
     text-align: left;
+    font-size: 24px;
 }
 
 .description {
     padding-left: 1vw;
-    margin: 0 2vw 1em 2vw;
+    margin: 0 2vw 2em 2vw;
     text-align: left;
+}
+
+.hairdresser-name {
+    font-size: 20px;
 }
 
 section {
@@ -125,11 +130,11 @@ section {
 }
 
 .hairdresser-one p, .hairdresser-two p, .hairdresser-three p {
-  margin-top: 10px;
+  margin-top: 12px;
 }
 
 .hairdresser-photo {
-    height:auto ;
+    height: auto;
     width:100%;
     display: block;
     margin: 0 auto;
@@ -159,7 +164,8 @@ section {
 
 .booking-form label {
     display: block;
-    margin-bottom: 1em;
+    margin: 0 10vw 1em 10vw;
+    
     font-weight: bold;
 }
 
@@ -195,6 +201,7 @@ section {
     display: inline-block;
     color: white;
     padding: 0.5em;
+    margin: 0 30vw 0 30vw;
     text-align: center;
     font-size: 16px; 
 }
