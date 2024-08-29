@@ -90,18 +90,49 @@ body{
     background-size: cover;
 }
 
+h3 {
+    padding-left: 3vw;
+    text-align: left;
+}
+
+.description {
+    padding-left: 1vw;
+    margin: 0 2vw 1em 2vw;
+    text-align: left;
+}
+
 section {
-    margin-left: 1em;
-    margin-right: 1em;
+    margin-left: 2vw;
+    margin-right: 2vw;
     padding: 1em;
-    background-color: rgba(255,255,255, 30%);
+    background-color: rgba(0, 0, 0, 0.637);
 }
 
 
 #about-us {
     margin-top: 100px; /*until I make the slider*/
-    
-   
+    text-align: center;
+}
+
+.hairdresser-one, .hairdresser-two, .hairdresser-three {
+    display:  inline-block;
+    width: 28%;
+    margin: 0 1%;
+    vertical-align: top;
+    text-align: center;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.hairdresser-one p, .hairdresser-two p, .hairdresser-three p {
+  margin-top: 10px;
+}
+
+.hairdresser-photo {
+    height:auto ;
+    width:100%;
+    display: block;
+    margin: 0 auto;
 }
 
 #service {
@@ -134,7 +165,7 @@ section {
 
 .booking-form input{
     display: block;
-    width:100%;
+    width: 100%;
     height: 3em;
     padding: 0.5em;
     margin-top: 0.5em;
@@ -142,7 +173,6 @@ section {
 }
 
 .booking-form .form-group {
-
     display: flex;
     justify-content: space-between;
 }

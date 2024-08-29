@@ -36,40 +36,52 @@
     <!--About us-->
         <section id="about-us">
             <h3>About us</h3>
-            <p>
+            <p class="description">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
             </p>
+            <div class="hairdresser-one">
+                <img class="hairdresser-photo" src="img/pexels-cottonbro-7440134.jpg" alt="Hairdresser Tom styles woman's hair">
+                <p>Hairdresser Tom</p>
+            </div>
+            <div class="hairdresser-two">
+                <img class="hairdresser-photo" src="img/pexels-cottonbro-3998422.jpg" alt="Hairdresser Axel cutting man's beard">
+                <p>Hairdresser Axel</p>
+            </div>
+            <div class="hairdresser-three">
+                <img class="hairdresser-photo" src="img/pexels-cottonbro-3993324.jpg" alt=" Hairdresser Lea dyes woman's hair">
+                <p>Hairdresser Lea</p>
+            </div>
         </section>
     <!--Service-->
         <section id="service">
             <h3>Service</h3>
-            <P>
+            <p class="description">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </P>
+            </p>
         </section>
     <!--Photo Galery-->
         <section id="photo-galery">
             <h3>Photo Galery</h3>
-            <P>
+            <p class="description">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </P>
+            </p>
         </section>
     <!--Reviews-->
         <section id="reviews">
             <h3>Reviews</h3>
-            <P>
+            <P class="description">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
             </P>
-            <P>
+            <P class="description">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
             </P>
-            <P>
+            <P class="description">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
             </P>
-            <P>
+            <P class="description">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
             </P>
-            <P>
+            <P class="description">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
             </P>
         </section>
@@ -78,8 +90,8 @@
             <h3>Book an appointment</h3>
             <form>
                 <div class="booking-form">
-                    <label for="name">Your Name: <input id="name" name="name" type="text" required/></label>
-                    <label for="phone">Your phone number: <input id="phone" name=phone type="tel"  pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}" maxlength="11" required placeholder="000-000-000"/></label>
+                    <label for="name">Your Name: <input id="name" name="name" type="text" required autocomplete="name" /></label>
+                    <label for="phone">Your phone number: <input id="phone" name=phone type="tel"  pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}" maxlength="11" required placeholder="000-000-000" />  </label>
                     <div class="form-group">
                     <label for="booked-date">Date: <input id="booked-date" name="date"  type="date" required/></label>
                     <label for="booked-hour">Hour: <input id="booked-hour" name="time" type="time" required/></label>
@@ -92,8 +104,8 @@
     <footer id="contact">
             <h3>Contact with us</h3>
             <address>CityName FirstStreet 81/2</address>
-            <p>tel: 999 xxx 999</p>
-            <p>email: hairdresser@email.com</p>
+            <p class="phone">tel: 999 xxx 999</p>
+            <p class="email">email: hairdresser@email.com</p>
             <a href="" id="Priv-Pol-Ter-Cond">Privacy Policy & Terms & Conditions</a>
     </footer>
 </body>
