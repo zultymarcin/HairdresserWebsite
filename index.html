@@ -9,23 +9,24 @@
 </head>
 <body>
     <script src="scripts/topnav.js"></script>
-
-    <header id="nav-menu">
-        <div class="topnav" id="myTopnav">
-            <h1 id="home"><a href="#home">Hairdresser Salon</a></h1>
-            <a href="#about-us">About us</a>
-            <a href="#service">Service</a>
-            <a href="#portfolio">Portfolio</a>
-            <a href="#booking">Booking</a>
-            <a href="#contact">Contact</a>
-            <a href="javascript:void(0);" class="icon" onclick="miniNav()">
-                <i class="fa fa-bars"></i></a>
-        </div>
+    <!-- 
+    Navbar after clicking the hamburger should be vertical
+    and the icon shold change to a X
+    -->
+    <header class="topnav" id="myTopnav">
+        <h1 ><a href="#home">Hairdresser Salon</a></h1>
+        <a href="#about-us">About us</a>
+        <a href="#service">Service</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#booking">Booking</a>
+        <a href="#contact">Contact</a>
+        <a href="javascript:void(0);" class="icon" onclick="miniNav()">
+            <i class="fa fa-bars"></i></a>
         <div class="clear"></div>
     </header>
     
     <!-- Slider with few photos of the best hairstyles-->
-        <script class="slider" src="scripts/slider.js"></script>
+        <script class="slider" src="scripts/slider.js" id="home"></script>
 
     <!--About us-->
         <section id="about-us">
