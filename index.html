@@ -9,11 +9,9 @@
 </head>
 <body>
     <script src="scripts/topnav.js"></script>
-    <!-- 
-    Navbar after clicking the hamburger should be vertical
-    and the icon shold change to a X
-    -->
-    <header class="topnav" id="myTopnav">
+    <script class="slider" src="scripts/slider.js" id="home"></script>
+    
+    <header class="topnav" id="navbar">
         <h1 ><a href="#home">Hairdresser Salon</a></h1>
         <a href="#about-us">About us</a>
         <a href="#service">Service</a>
@@ -25,8 +23,19 @@
         <div class="clear"></div>
     </header>
     
-    <!-- Slider with few photos of the best hairstyles-->
-        <script class="slider" src="scripts/slider.js" id="home"></script>
+    <!-- Image grid -->
+    <div class="content">  
+    <div class="row">
+        <div class="column">
+            <img src="img/pexels-cottonbro-3993115.jpg" alt="Lea chosing a hair dye" >
+            <img src="img/pexels-cottonbro-3992855.jpg" alt="hairdresser tools">
+        </div>
+        <div class="column">
+            <img src="img/pexels-cottonbro-3993133.jpg" alt="Hairdressing Studio" >
+            <img src="img/pexels-nickoloui-1319460.jpg" alt="Scisors">
+        </div>
+    </div>
+        
 
     <!--About us-->
         <section id="about-us">
@@ -106,5 +115,6 @@
             <a href="https://instagram.com" target="_blank" id="social-media" class=" fa fa-instagram">instagram</a>
             <a href="" id="Priv-Pol-Ter-Cond">Privacy Policy & Terms & Conditions</a>
     </footer>
+    </div>
 </body>
 </html>
