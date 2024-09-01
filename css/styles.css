@@ -1,7 +1,7 @@
 
 
 h1 {
-    color: rgb(255, 230, 0);
+    color: rgb(23, 23, 23);
     font-size: 16px;
     padding: 0px;
     margin: 0;
@@ -13,7 +13,7 @@ h1 a {
 }
 
 .topnav h1 a:hover {
-    color: rgb(252, 235, 0);
+    color: rgb(23, 23, 23);
 }
 
 .clear {
@@ -36,8 +36,8 @@ h1 a {
 }
 
 .topnav a:hover {
-    background-color: hsl(0, 0%, 40%);
-    color: white;
+    background-color: #ffee8e;
+    color: rgb(32, 32, 32);
 }
 
 .content {
@@ -51,7 +51,7 @@ h1 a {
 }
 
 .sticky + .content {
-    padding-top: 60px;
+    padding-top: 1em;
 }
 
 
@@ -117,10 +117,14 @@ body{
     background-size: cover;
 }
 
-h3 {
+h2 {
     padding-left: 3vw;
     text-align: left;
-    font-size: 24px;
+    font-size: 28px;
+}
+h3 {
+    padding-left: 4vw;
+    text-align: left;
 }
 
 .description {
@@ -146,7 +150,7 @@ section {
 
 
 #about-us {
-    margin-top: 3vw; /*until I make the slider*/
+    margin-top: 1vw; /*until I make the slider*/
     text-align: center;
 }
 
@@ -172,19 +176,73 @@ section {
 }
 
 #service {
-    content: "";
+    margin-top: 3vw;
+    
 }
+
+.services-list {
+    width: 50%;
+    /*background-color: aqua;*/
+    
+}
+
+.services-list ul {
+    padding-left: 6vw;
+    list-style-type: circle;
+    margin: 0;
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+.services-list ul li {
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.services-list p {
+    padding-left: 3.5vw;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.services-list a {
+    color: #ffee8e;
+}
+.services-list a:hover {
+    color: #ffe134;
+}
+
+span {
+    font-weight: bold;
+    color:  #ffee8e;
+    font-size: 1.1em;
+    padding-bottom: 5px;
+}
+
+@media (min-width: 600px) {
+    li {
+        flex-direction: row; 
+        align-items: center; 
+    }
+
+    span {
+        margin-bottom: 0; 
+    }
+}
+
 
 #photo-galery {
-    content: "";
+    margin-top: 1vw;
 }
 
-#reviews {
-    content: "";
-}
 
 #booking{
-    margin-bottom: 100px;
+    margin-top: 1vw;
 
 }
 
