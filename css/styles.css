@@ -143,11 +143,13 @@ h3 {
 
 .description {
     padding-left: 1vw;
-    margin: 0 2vw 2em 2vw;
+    margin: 0 2vw 1em 2vw;
     text-align: left;
     
 }
-
+.bottom {
+    padding-bottom: 1vw;
+}
 
 section {
     margin-left: 2vw;
@@ -320,34 +322,63 @@ span {
     cursor: pointer;
 }
 
-
-
 footer {
     background-color: #2E2E2E;
     text-align: center;
-    display: inline-block;
     color: white;
     margin: 0;
-    padding: 1em;
+    padding: 2em 1em;  
     box-sizing: border-box;
     width: 100%;
 }
 
-#social-media {
-    color: white;
-    font-size: 16px;
-    display: inline-block;
-}
 .ftr-contact {
-    text-align: center;
-    padding-left: 0;
+    font-size: 24px; 
+    margin-bottom: 1em; 
+    color: #D4AF37;
+}
+
+address, .phone, .email {
+    margin: 0.5em 0; 
+    font-style: normal; 
+}
+
+.phone a, .email a {
+    color:#D4AF37;
+}
+
+.social-media-list {
+    list-style: none;
+    padding: 0;
+    margin: 1em 0;
+    display: flex;
+    justify-content: center;
+    gap: 1em; 
+}
+
+.social-media-list li a {
+    color: white;
+    font-size: 20px; 
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.social-media-list li a:hover {
+    color: #D4AF37; 
 }
 
 #Priv-Pol-Ter-Cond {
     color: #D4AF37;
     text-decoration: none;
+    margin-top: 1em; 
+    display: inline-block;
+    transition: color 0.3s ease;
 }
 
 #Priv-Pol-Ter-Cond:hover {
-    color: #D4AF37;
+    color: #FFFFFF; 
+}
+
+footer p, footer address {
+    margin: 0.5em 0; 
 }
