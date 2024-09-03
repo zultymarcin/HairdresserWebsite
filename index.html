@@ -37,6 +37,42 @@
         </div>
         <script src="scripts/slideshow.js"></script>
     </div>
+
+    <!--About us-->
+    <script src="scripts/fullscreen-img.js"></script>
+
+    <section id="about-us">
+        <h2>About us</h2>
+        <p class="description">
+            Welcome to <b>Hairdresser Salon</b>, where style meets craftsmanship! 
+            Our team of passionate professionals is here to help you look and feel your best.
+        </p>
+        <p class="description">Meet <b>Tom</b>, our creative mastermind with a keen eye for the latest trends, <b>Lea</b>, whose expertise in color and cuts will leave you glowing, and <b>Axel</b>, our barbering specialist,
+             known for his precision in men’s grooming and classic cuts.</p>
+        <p class="description bottom">Whether you’re looking for a fresh new look, a flawless color, or a sharp barbering experience, we’ve got you covered. Visit us and let us create a style that’s uniquely yours!</p>
+        
+        <div class="hairdresser-one">
+            <div class="hairdresser-name">Tom</div>
+            <img class="fullscreen-photo" src="img/pexels-cottonbro-7440134.jpg" alt="Hairdresser Tom styles woman's hair">
+            <p>Tom is an expert in classic haircuts and modern styles.</p>
+        </div>
+        <div class="hairdresser-two">
+            <div class="hairdresser-name">Axel</div>
+            <img class="fullscreen-photo" src="img/pexels-cottonbro-3998422.jpg" alt="Hairdresser Axel cutting man's beard">
+            <p>Axel specializes in barber services and beard styling.</p>
+        </div>
+        <div class="hairdresser-three">
+            <div class="hairdresser-name">Lea</div>
+            <img class="fullscreen-photo" src="img/pexels-cottonbro-3993324.jpg" alt=" Hairdresser Lea dyes woman's hair">
+            <p>Lea is known for her creative coloring and cutting techniques.</p>
+        </div>
+    </section>
+
+    <div id="fullscreenOverlay" class="fullscreen-overlay">
+        <img id="fullscreenImg" src="" alt="">
+        <p id="closeText">Click on the screen to close the image</p>
+        
+    </div>
    
     <!--Service-->
     <section id="service">
@@ -106,36 +142,34 @@
         </div>
     </section>
 
-    
-    
     <!--Photo Galery-->
         <section id="portfolio">
-            <h2>Photo Galery</h2>
+            <h2>Portfolio</h2>
             <p class="description">
               A photo galery ith Our best cuts and stylizations!
             </p>
             <div class="row">
                 <div class="column">
                     <div class="content-portfolio">
-                        <img src="img/pexels-cottonbro-3993469.jpg" alt="woman with short wavy brown hair" style="width: 100%;">
+                        <img class="fullscreen-photo" src="img/pexels-cottonbro-3993469.jpg" alt="woman with short wavy brown hair" style="width: 100%;">
                     </div>
                 </div>
             
                 <div class="column">
                     <div class="content-portfolio">
-                        <img src="img/pexels-cottonbro-3998429.jpg" alt="man with beard mustache" style="width: 100%;">
+                        <img class="fullscreen-photo" src="img/pexels-cottonbro-3998429.jpg" alt="man with beard mustache" style="width: 100%;">
                     </div>
                 </div>
            
                 <div class="column">
                     <div class="content-portfolio">
-                        <img src="img/pexels-cottonbro-7440134.jpg" alt="woman with long blonde hair" style="width: 100%;">
+                        <img class="fullscreen-photo" src="img/pexels-cottonbro-7440134.jpg" alt="woman with long blonde hair" style="width: 100%;">
                     </div>
                 </div>
 
                 <div class="column">
                     <div class="content-portfolio">
-                        <img src="img/pexels-cottonbro-3993451.jpg" alt="woman with long blackhair" style="width: 100%;">
+                        <img class="fullscreen-photo" src="img/pexels-cottonbro-3993451.jpg" alt="woman with long blackhair" style="width: 100%;">
                     </div>
                 </div>
             </div>
@@ -157,29 +191,8 @@
             </form>
         </section>
 
-        <!--About us-->
-        <section id="about-us">
-            <h2>About us</h2>
-            <p class="description">
-                Welcome to <b>Hairdresser Salon</b>, where style meets craftsmanship! 
-                Our team of passionate professionals is here to help you look and feel your best.
-            </p>
-            <p class="description">Meet <b>Tom</b>, our creative mastermind with a keen eye for the latest trends, <b>Lea</b>, whose expertise in color and cuts will leave you glowing, and <b>Axel</b>, our barbering specialist,
-                 known for his precision in men’s grooming and classic cuts.</p>
-            <p class="description bottom">Whether you’re looking for a fresh new look, a flawless color, or a sharp barbering experience, we’ve got you covered. Visit us and let us create a style that’s uniquely yours!</p>
-            <div class="hairdresser-one">
-                <img class="hairdresser-photo" src="img/pexels-cottonbro-7440134.jpg" alt="Hairdresser Tom styles woman's hair">
-                <p class="hairdresser-name">Hairdresser Tom</p>
-            </div>
-            <div class="hairdresser-two">
-                <img class="hairdresser-photo" src="img/pexels-cottonbro-3998422.jpg" alt="Hairdresser Axel cutting man's beard">
-                <p class="hairdresser-name">Hairdresser Axel</p>
-            </div>
-            <div class="hairdresser-three">
-                <img class="hairdresser-photo" src="img/pexels-cottonbro-3993324.jpg" alt=" Hairdresser Lea dyes woman's hair">
-                <p class="hairdresser-name">Hairdresser Lea</p>
-            </div>
-        </section>
+        
+
     <!--Contact, Privacy Policy & Terms & Conditions etc. -->
     <footer id="contact">
         <h2 class="ftr-contact">Contact Us</h2>

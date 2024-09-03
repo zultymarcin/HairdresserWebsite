@@ -14,7 +14,7 @@ h1 a {
 }
 
 .topnav h1 a:hover {
-    color: #D4AF37;
+    color: #fff;
 }
 
 .topnav {
@@ -34,8 +34,8 @@ h1 a {
 }
 
 .topnav a:hover {
-    background-color: #5A7D7C;
-    color: #D4AF37;
+    background-color: #D4AF37;
+    color: #fff;
 }
 
 .content {
@@ -62,6 +62,7 @@ h1 a {
     .topnav a.icon {
       float: right;
       display: block;
+      
     }
 }
   
@@ -71,11 +72,13 @@ h1 a {
       position: absolute;
       right: 0;
       top: 0;
+      
     }
     .topnav.responsive a {
       float: none;
       display: block;
       text-align: left;
+      
     }
 }
 
@@ -173,7 +176,7 @@ section {
 .hairdresser-name {
     font-size: 120%;
     font-weight: bold;
-    padding-top:1em ;
+    padding-bottom:1em ;
 }
 
 .hairdresser-one, .hairdresser-two, .hairdresser-three {
@@ -190,11 +193,53 @@ section {
   margin-top: 12px;
 }
 
-.hairdresser-photo {
+.fullscreen-photo {
     height: auto;
     width:100%;
     display: block;
     margin: 0 auto;
+}
+
+.fullscreen-photo:hover {
+    cursor: pointer;
+}
+
+
+
+/* full-screen image */
+
+.fullscreen-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9); 
+    display: none; 
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 1000;
+}
+
+.fullscreen-overlay img {
+    max-width: 100%;
+    max-height: 80%;
+    width: auto;
+    height: auto;
+}
+
+.fullscreen-overlay.active {
+    display: flex; 
+}
+
+#closeText {
+    color: white;
+    font-size: 18px;
+    margin-bottom: 15px; 
+    text-align: center;
+    width: 100%; 
+    padding: 10px 0;
 }
 
 /* SERVICE */
@@ -251,7 +296,7 @@ section {
     text-decoration: none;
 }
 .services-list a:hover {
-    color: #5A7D7C;
+    color: #ffc400;
 }
 
 @media (min-width: 600px) {
@@ -381,6 +426,8 @@ section {
     background-color: #444;
 }
 
+/* FOOTER */
+
 footer {
     background-color: #2E2E2E;
     text-align: center;
@@ -406,6 +453,10 @@ address, .phone, .email {
     color:#D4AF37;
 }
 
+.phone a:hover, .email a:hover {
+    color:#ffc400;
+}
+
 .social-media-list {
     list-style: none;
     padding: 0;
@@ -423,7 +474,7 @@ address, .phone, .email {
 }
 
 .social-media-list li a:hover {
-    color: #D4AF37; 
+    color: #ffc400; 
 }
 
 #Priv-Pol-Ter-Cond {
@@ -435,7 +486,7 @@ address, .phone, .email {
 }
 
 #Priv-Pol-Ter-Cond:hover {
-    color: #FFFFFF; 
+    color: #ffc400; 
 }
 
 footer p, footer address {
