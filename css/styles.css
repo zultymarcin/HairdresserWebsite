@@ -94,7 +94,9 @@ body{
 }
 /*  SLIDER */
 * {box-sizing:border-box}
+
 .mySlides {display: none;}
+
 #slide-img {
     vertical-align: middle;
     width: 100%;
@@ -133,7 +135,8 @@ body{
 h2 {
     padding-left: 3vw;
     text-align: left;
-    font-size: 28px;
+    font-size: 32px;
+    font-weight: bold;
     color: #D4AF37;
 }
 h3 {
@@ -160,7 +163,7 @@ section {
     background-color: #5A7D7C;
 }
 
-
+/* ABOUT US */
 #about-us {
     margin-top: 1vw; /*until I make the slider*/
     text-align: center;
@@ -194,70 +197,124 @@ section {
     margin: 0 auto;
 }
 
+/* SERVICE */
+
 #service {
-    margin-top: 3vw;
-    
+    margin-top: 3vw; 
 }
 
 .services-list {
-    width: 50%;
-    
+    width: 90%;
+    max-width: 800px;
+    margin: auto;
 }
 
 .services-list ul {
     padding-left: 1vw;
-    list-style-type: circle;
+    list-style-type: none;
     margin: 0;
     max-width: 600px;
-    margin: 20px auto;
+    margin: 10px auto;
 }
 
 .services-list ul li {
-    margin: 10px 0;
-    padding: 15px;
+    margin: 8px 0;
+    padding: 10px;
     border-radius: 8px;
     display: flex;
-    flex-direction: column;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: center;
+    font-size: 0.95em;
+    line-height: 1.4;
+    flex-wrap: wrap;
+    border-bottom: #f2f2f2 solid 2px;
+    border-radius: 0;
+}
+.services-list span {
+    font-weight: bold;
+    color:  #D4AF37;
+    font-size: 1em;
+    min-width: 100px;
+    text-align: right;
+    padding-bottom: 0;
+    
 }
 
 .services-list p {
     padding-left: 3.5vw;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 18px;
 }
 
 .services-list a {
     color: #D4AF37;
+    text-decoration: none;
 }
 .services-list a:hover {
     color: #5A7D7C;
 }
 
-span {
-    font-weight: bold;
-    color:  #D4AF37;
-    font-size: 1.1em;
-    padding-bottom: 5px;
-}
-
 @media (min-width: 600px) {
-    li {
-        flex-direction: row; 
-        align-items: center; 
+    .services-list ul {
+        columns: 1; 
+        
     }
 
-    span {
+    .services-list ul li {
+        flex-direction: row; 
+        align-items: center;
+    }
+
+    .services-list span {
         margin-bottom: 0; 
     }
 }
-
+/* PORTFOLIO */
 
 #photo-galery {
     margin-top: 1vw;
+    
 }
 
+.row {
+    margin: 8px -16px;
+    
+}
+
+.row, .row > .column {
+  padding: 8px;
+}
+
+.column {
+    float: left;
+    
+    width: 25%;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.content-portfolio {
+    background-color: white;
+    padding: 10px;
+}
+
+@media screen and (max-width: 900px) {
+    .column {
+      width: 50%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+    }
+}
+
+/* BOOKING */
 
 #booking{
     margin-top: 1vw;
@@ -311,15 +368,17 @@ span {
 .booking-form button{
     background-color: #2E2E2E;
     display: inline-block;
-    color: white;
+    color: #D4AF37;
     padding: 0.5em;
     margin: 0 30vw 0 30vw;
     text-align: center;
-    font-size: 16px; 
+    font-size: 16px;
+    font-weight: bold; 
     border-radius: 10px;
 }
 .booking-form button:hover {
     cursor: pointer;
+    background-color: #444;
 }
 
 footer {
