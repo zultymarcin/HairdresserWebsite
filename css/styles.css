@@ -1,5 +1,6 @@
 
 
+/* TOPNAV*/
 h1 {
     color: rgb(23, 23, 23);
     font-size: 16px;
@@ -16,13 +17,10 @@ h1 a {
     color: rgb(23, 23, 23);
 }
 
-.clear {
-    clear: both;
-}
-
 .topnav {
     overflow: hidden;
     background-color: #333;
+    z-index: 1000;
 }
 
 .topnav a{
@@ -81,34 +79,12 @@ h1 a {
     }
 }
 
-.row {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    margin-top: 1px;
-    
-}
-.column {
-    flex:50%;
-    padding: 0 0px;
-    box-sizing: border-box;
-}
-.column img {
-    width: auto;
-    max-width: 100%;
-    height: 100%;
-    margin-top: 0px;
-    vertical-align: middle;
-    border:#f2f2f2 solid 1px;
-    
-}
-
 @media screen and (max-width: 768px) {
     .column {
         flex: 100%;
     }
 }
-
+/* BODY */
 body{
     font-family: sans-serif;
     color: white;
@@ -116,7 +92,44 @@ body{
     padding: 0;
     background-size: cover;
 }
+/*  SLIDER */
+* {box-sizing:border-box}
+.mySlides {display: none;}
+#slide-img {
+    vertical-align: middle;
+    width: 100%;
+    height: auto; 
+}
 
+/* Slideshow container */
+.slideshow-container {
+  max-width: 100%;
+  position: relative;
+  margin: auto;
+  padding-top: 3vw;
+  
+}
+@media (min-width: 800px) {
+    #slide-img {
+      width: 800px; /* Use fixed width on larger screens */
+    }
+    .slideshow-container {
+      max-width: 800px;
+    }
+  }
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* H2 H3 DESCRIPTION */
 h2 {
     padding-left: 3vw;
     text-align: left;
@@ -134,10 +147,6 @@ h3 {
     
 }
 
-.hairdresser-name {
-    font-size: 100%;
-
-}
 
 section {
     margin-left: 2vw;
@@ -152,6 +161,12 @@ section {
 #about-us {
     margin-top: 1vw; /*until I make the slider*/
     text-align: center;
+}
+
+
+.hairdresser-name {
+    font-size: 100%;
+
 }
 
 .hairdresser-one, .hairdresser-two, .hairdresser-three {

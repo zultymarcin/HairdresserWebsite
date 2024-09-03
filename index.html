@@ -6,10 +6,10 @@
     <title>Hairdresser Salon</title>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="scripts/topnav.js"></script>
+    
 </head>
 <body>
-    <script src="scripts/topnav.js"></script>
-    <script class="slider" src="scripts/slider.js" id="home"></script>
     
     <header class="topnav" id="navbar">
         <h1 ><a href="#home">Hairdresser Salon</a></h1>
@@ -23,19 +23,21 @@
         <div class="clear"></div>
     </header>
     
-    <!-- Image grid -->
-    <div class="content">  
-    <div class="row">
-        <div class="column">
-            <img src="img/pexels-cottonbro-3993115.jpg" alt="Lea chosing a hair dye" >
-            <img src="img/pexels-cottonbro-3992855.jpg" alt="hairdresser tools">
+    <!-- Slider-->
+    <div class="slideshow-container" id="home">
+
+        <div class="mySlides fade">
+            <img src="img/pexels-cottonbro-3993133.jpg" id="slide-img" alt="Our studio">
         </div>
-        <div class="column">
-            <img src="img/pexels-cottonbro-3993133.jpg" alt="Hairdressing Studio" >
-            <img src="img/pexels-nickoloui-1319460.jpg" alt="Scisors">
+        <div class="mySlides fade">
+            <img src="img/pexels-cottonbro-3992855.jpg" id="slide-img" alt="Haidresser tools">   
         </div>
+        <div class="mySlides fade">
+            <img src="img/pexels-cottonbro-3993115.jpg" id="slide-img" alt="Lea chosing a hairdye">  
+        </div>
+        <script src="scripts/slideshow.js"></script>
     </div>
-        
+   
     <!--Service-->
     <section id="service">
         <h2>Services</h2>
@@ -178,6 +180,5 @@
             <a href="https://instagram.com" target="_blank" id="social-media" class=" fa fa-instagram">instagram</a>
             <a href="" id="Priv-Pol-Ter-Cond">Privacy Policy & Terms & Conditions</a>
     </footer>
-    </div>
 </body>
 </html>
